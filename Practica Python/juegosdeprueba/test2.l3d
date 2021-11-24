@@ -1,0 +1,4 @@
+PROC main () IS
+  >> a
+  >> b
+  << a / b

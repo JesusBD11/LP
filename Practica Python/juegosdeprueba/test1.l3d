@@ -1,0 +1,22 @@
+PROC prueba(mida) IS
+  FOR i FROM 1 TO 4 DO
+    >> x
+    >> y
+    << x
+    << y
+    IF x != y THEN
+      up(x)
+      left(y)
+      forward(c)
+    END
+  END
+END
+
+PROC main () IS
+    >> a
+    >> b
+    c := a + b
+    prueba(c)
+    home()
+    forward(c)
+END

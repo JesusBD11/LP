@@ -1,0 +1,17 @@
+PROC quadrat_blau(mida) IS
+    color (0.3, 0.5, 1)
+    FOR i FROM 1 TO 5 DO
+        forward(mida)
+        left(90)
+    END
+END
+PROC main () IS
+  >> x
+  quadrat_blau(x)
+  home()
+  show()
+  >> mov
+  down(90)
+  forward(mov)
+
+END

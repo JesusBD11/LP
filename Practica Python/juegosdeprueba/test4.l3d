@@ -1,0 +1,21 @@
+PROC prueba(a, b) IS
+    >> i
+    WHILE i > 0 DO
+      a := a - 1
+      b := b - 1
+      forward(i)
+      i := i - 1
+      << i
+      << a
+      << b
+    END
+    << a
+    << b
+END
+
+// Programa principal.
+
+PROC main() IS
+    >> valor1 >> valor2
+    prueba(valor1, valor2)
+END
